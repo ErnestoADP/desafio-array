@@ -141,11 +141,11 @@ let dental = [{
 
 document.write('<h2>Atenciónes</h2>')
 document.write('<hr>')
-document.write('<p> Primera atención: ' + radiologia[0].nombrePaciente + '-' + radiologia[0].prevision + ' | Última atención: ' + radiologia[length - 1].nombrePaciente + '-' + radiologia[length - 1].prevision + '</p>')
+document.write('<p> Primera atención: ' + radiologia[0].nombrePaciente + '-' + radiologia[0].prevision + ' | Última atención: ' + radiologia[radiologia.length - 1].nombrePaciente + '-' + radiologia[radiologia.length - 1].prevision + '</p>')
 document.write('<hr>')
-document.write('<p> Primera atención: ' + traumatologia[0].nombrePaciente + '-' + traumatologia[0].prevision + ' | Última atención: ' + traumatologia[length - 1].nombrePaciente + '-' + traumatologia[length - 1].prevision + '</p>')
+document.write('<p> Primera atención: ' + traumatologia[0].nombrePaciente + '-' + traumatologia[0].prevision + ' | Última atención: ' + traumatologia[traumatologia.length - 1].nombrePaciente + '-' + traumatologia[traumatologia.length - 1].prevision + '</p>')
 document.write('<hr>')
-document.write('<p> Primera atención: ' + dental[0].nombrePaciente + '-' + dental[0].prevision + ' | Última atención: ' + dental[length - 1].nombrePaciente + '-' + dental[length - 1].prevision + '</p>')
+document.write('<p> Primera atención: ' + dental[0].nombrePaciente + '-' + dental[0].prevision + ' | Última atención: ' + dental[dental.length - 1].nombrePaciente + '-' + dental[dental.length - 1].prevision + '</p>')
 document.write('<hr>')
     /**------------------------Radiologia------------------------------*/
 document.write('<h2>Radiología</h2>')
@@ -155,6 +155,7 @@ document.write('<tr>')
 document.write('<th>HORA</th>')
 document.write('<th>Doctor</th>')
 document.write('<th>Paciente</th>')
+
 document.write('<th>Rut</th>')
 document.write('<th>Prevision</th>')
 document.write('</tr>')
